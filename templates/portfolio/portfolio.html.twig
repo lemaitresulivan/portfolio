@@ -1,0 +1,269 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+	<header>
+		<div class="nav-container">
+
+			<nav>
+
+				<h1 class="slm">
+					<a href="#">S<span>LM</span>
+					</a>
+				</h1>
+				<ul>
+					<li><a href="#welcome">Accueil</a></li>
+					<li><a href="#presentation">Présentation</a></li>
+					<li><a href="#skills">Compétences</a></li>
+					<li><a href="#curriculum">C.V</a></li>
+					<li><a href="#realisations">Réalisations</a></li>
+					<li><a href="#contact">Contact</a></li>
+
+				</ul>
+
+			</nav>
+
+		</div>
+	</header>
+	<main>
+		<section id="welcome">
+			<h2>
+				SULIVAN LE MAITRE
+				<span>SULIVAN LE MAITRE</span>
+				<span>SULIVAN LE MAITRE</span>
+				<span>développeur back-end junior</span>
+			</h2>
+			<div class="center">
+				<div class="down"></div>
+			</div>
+		</section>
+
+		<section id="presentation">
+			<h2>
+				Présentation
+			</h2>
+			<div class="text-presentation">
+				<p>Je m'appelle Sulivan, et j'ai 25 ans. Après plusieurs expériences professionnelles dans le domaine de la vente en prêt-à-porter puis de la grande distribution, j'ai entrepris de me former dans mon domaine de prédilection, le
+					<span>web</span>. J'ai donc suivi une formation intensive de 5 mois à temps plein (+ 700heures) avec l'organisme de formation
+					<a href="https://oclock.io/">O'Clock</a>, afin d'apprendre différents langages du web et être en mesure de prendre un poste de Développeur Web Junior.
+					<br/><span class="guillemets">>></span>
+					<span class="dispo">Disponible pour une prise de poste. Sera à prendre en compte le préavis du poste en cours.</span>
+				</p>
+			</div>
+			<div class="picture-presentation">
+				<img id="profil_img" src="{{asset('assets/img/me.jpg')}}" alt="Sulivan Le Maitre">
+			</div>
+		</section>
+
+
+		<section id="skills">
+			<h2 class="skills-title">Compétences</h2>
+			<div class="img-opquast">
+				<img id="opquast_badge" src="https://data.v2019.oqs-cdn.com/openbadges/issuer_DNI4HF.svg" alt="Badge opquast">
+			</div>
+			<div class="desc-opquast">
+				<p>
+					<span>735 points</span>
+					<br/><span>"Bonne connaissance des bonnes pratiques qualité Web et du vocabulaire associé. Capacités à comprendre et échanger avec les autres professionnels du Web."</span>
+					<br/>Certificat valide jusqu'au 19 mai 2025 -
+					<span>Authentifiant : DNI4HF</span>
+				</p>
+			</div>
+
+
+			<div class="progress-container">
+				<div class="box">
+					<div class="chart" data-percent="90">85%</div>
+					<h2>Html<span>*</span>
+					</h2>
+				</div>
+				<div class="box">
+					<div class="chart" data-percent="80">80%</div>
+					<h2>CSS<span>*</span>
+					</h2>
+				</div>
+				<div class="box">
+					<div class="chart" data-percent="75">75%</div>
+					<h2>Symfony<span>*</span>
+					</h2>
+				</div>
+				<div class="box">
+					<div class="chart" data-percent="70">70%</div>
+					<h2>PHP<span>*</span>
+					</h2>
+				</div>
+				<div class="box">
+					<div class="chart" data-percent="65">65%</div>
+					<h2>MySQL<span>*</span>
+					</h2>
+				</div>
+				<div class="box">
+					<div class="chart" data-percent="55">55%</div>
+					<h2>Javascript / JQuery<span>*</span>
+					</h2>
+				</div>
+				<div class="notabene">
+					<h2>* : Ces estimations sont des repères de compétences d'un Développeur Web Junior et non d'un Confirmé.</h2>
+				</div>
+			</div>
+
+			<div class="other-skills">
+				<h2>Autres compétences / notions connues</h2>
+
+				<div class="other-container">
+					<p>
+						<span>Architecture MVC</span>
+						<span>Responsive Design</span>
+						<span>Programmation Orientée Objet</span>
+						<span>PDO</span>
+						<span>DOM</span>
+						<span>Doctrine</span>
+						<span>Twig</span>
+						<span>Lumen</span>
+						<span>Méthode Agile</span>
+						<span>SCRUM</span>
+						<span>ORM</span>
+						<span>CMS</span>
+						<span>Wordpress</span>
+						<span>AJAX</span>
+						<span>Maquette</span>
+						<span>Wireframes</span>
+						<span>BDD</span>
+						<span>Dictionnaire de données</span>
+						<span>MCD</span>
+						<span>Mocodo</span>
+						<span>Kanban/Trello</span>
+						<span>Discord</span>
+						<span>Slack</span>
+						<span>Github</span>
+						<span>Conception</span>
+						<span>AWS</span>
+						<span>Tests fonctionnels</span>
+						<span>Tests unitaires</span>
+						<span>Composer</span>
+						<span>Recherches anglophones</span>
+						<span>Bootstrap</span>
+						<span>Bulma</span>
+						<span>API REST</span>
+						<span>LAMP</span>
+					</p>
+				</div>
+			</div>
+
+		</section>
+
+
+		<section id="curriculum">
+			<h2 class="cv-title">Curriculum vitae</h2>
+			<div class="cv-container">
+				<div class="cv-left">
+					<h3>Expériences professionnelles</h3>
+					<ul>
+						<li>
+							<span>Hôte Service Clients</span>
+							- 2016 à aujourd'hui -
+							<span class="cv-localisation">LEROY MERLIN (Trignac)</span>
+							- Accueil, caisse, gestion des pôles annexes (reprise, retrait de commandes, cour des matériaux), gestion d'une plateforme de relation, fidélisation et ouvertures de crédits revolving, gestionnaire de multi-projets, formation des nouveaux arrivants.</li>
+						<li>
+							<span>Pilier de rayon</span>
+							- 2016 -
+							<span class="cv-localisation">ZARA / INDITEX (St Nazaire)</span>
+							- Accueil, encaissement, gestion d'un rayon, gestion du réassort et des ruptures, tenue de rayon, conseils clients, gestion de réserves, formation des nouveaux arrivants, remplacements ponctuels au sein d'autres enseignes du groupe.</li>
+						<li>
+							<span>Vendeur en prêt-à-porter</span>
+							- 2015 à 2016 -
+							<span class="cv-localisation">ZARA / INDITEX (Champs-Elysées)</span>
+							- Accueil, réassort, conseils clients, réception de marchandises, mission d'assistant de responsables en remplacement dans un autre magasin.</li>
+						<li>
+							<span>Préparateur de commandes</span>
+							- 2015 -
+							<span class="cv-localisation">RESTAGRAF (Sannois)</span>
+							- Mission d'intérim de longue durée - Réception des bons de préparation, colisage, mise en palette, préparation des contenants, manutentions et manipulation de transpalettes électriques, émargement des bons, gestion de stocks, mise en rack des commandes préparées.</li>
+					</ul>
+				</div>
+				<div class="cv-right">
+					<h3>Formations / Diplômes</h3>
+					<div class="right-container">
+						<ul>
+							<li>
+								<span>DWWM Niveau 3</span>
+								- Oct. 2019 à Mars 2020 -
+								<span class="cv-localisation">O'Clock (téléprésentiel)</span>
+								- Apprentissage des compétences relatives au métier de Développeur Web Junior. Socle commun : HTML - CSS - JS - PHP - SQL - Wordpress (3 mois) ; Spécialisation : Symfony (1 mois) ; Projet de groupe en méthode Agile (1 mois). Titre professionnel Développeur Web et Web Mobile passé le 24 Juin 2020 -
+								<br/><span class="attestation">
+									<a href="{{asset('assets/docs/attestation.pdf')}}" target="_blank">> Attestation de réussite (.pdf) - 78 ko</a>
+								</span>
+							</li>
+							<li>
+								<span>Première Scientifique</span>
+								- 2013 -
+								<span class="cv-localisation">Lycée Aristide Briand (St Nazaire)</span>
+								- Année effectuée.</li>
+							<li>
+								<span>Diplôme National du Brevet</span>
+								- 2009 -
+								<span class="cv-localisation">Collège Saint-Louis (St Nazaire)</span>
+								- Obtenu, mention Bien.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<a class="link-cv" href="{{asset('assets/docs/cv.pdf')}}" target="_blank">
+				> Accéder au CV complet (.pdf) - 174 ko
+			</a>
+
+		</section>
+		<section id="realisations">
+			<h2 class="rea-title">Réalisations</h2>
+			<div class="slider">
+				<div class="card">
+					<div class="img"><img src="{{asset('assets/img/1.png')}}" alt="visuel du projet jeu de rôles"></div>
+					<div class="card-content">
+						<div class="content-title">JDR Pokémon</div>
+						<div class="content-subtitle">Projet de fin de formation</div>
+						<p>Projet de fin de formation, réalisé en 1 mois. Travail en équipe de 6 personnes via la méthode agile scrum. Interface de l'application dévelopée sous symfony, et plateau de jeu intéractif en temps réel développé sous reactjs. Rôle occupé : développeur back-end symfony. Mise en prod sur AWS.<br /><span>#projet #jdr #symfony #composants #login-register-form #twig #annotation #orm-doctrine #profiler #maker #security-bundle</span></p>
+						<div class="content-btn">
+						<button><a href="https://github.com/lemaitresulivan/jdr-pokemon-online" target="_blank">Lien GitHub</a></button></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="img"><img src="{{asset('assets/img/2.png')}}" alt="organisedme"></div>
+					<div class="card-content">
+						<div class="content-title">OrganisedMe</div>
+						<div class="content-subtitle">Projet en cours de développement</div>
+						<p>Projet en cours de développement, post-fomation. Après l'établissement des documents de conception, développement en cours d'une application web permettant d'avoir sous la main une horloge, une calculatrice et un organiseur de tâches (Todo list). L'application est créée sous Symfony, et les composants seront développés en Javascript.<br /><span>#symfony #Javascript #time #calc #todolist #first-project #dev</span></p>
+						<div class="content-btn">
+						<button><a href="https://github.com/lemaitresulivan/organisedme" target="_blank">Lien GitHub</a></button></div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="img"><img src="{{asset('assets/img/3.png')}}" alt="portfolio"></div>
+					<div class="card-content">
+						<div class="content-title">Portfolio</div>
+						<div class="content-subtitle">Projet abouti</div>
+						<p>Portfolio personnel réalisé sous Symfony. Il réunit plusieurs sections présentant le candidats, ses compétences et ses projets. Il s'agit d'une SPA (Single Page Application), et l'accent a été porté sur le CSS de l'application, et du jquery/javascript afin de travailler aussi le côté front-end des compétences. Projet déployé et consultable en ligne.<br /><span>#symfony #portfolio #css #twig #profiler #javascript #jquery #prod</span></p>
+						<div class="content-btn">
+						<button><a href="https://github.com/lemaitresulivan/portfolio" target="_blank">Lien GitHub</a></button></div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section id="contact">
+
+
+		<h2 class="contact-title">Me Contacter</h2>
+
+		<div class="contact-content">
+		<img src="{{asset('assets/img/mail.png')}}" alt="icône mail">lemaitresulivan@gmail.com
+		<img src="{{asset('assets/img/phone.png')}}" alt="icône téléphone">07.71.60.67.70
+		<img src="{{asset('assets/img/linkedin.png')}}" alt="icône linkedin"><a href="https://www.linkedin.com/in/sulivan-le-maitre-b8a852197/" target="_blank">Sulivan Le Maitre</a>
+		<img src="{{asset('assets/img/github.png')}}" alt="icône github"><a href="https://github.com/lemaitresulivan" target="_blank">lemaitresulivan</a>
+
+		</div>
+		
+		</section>
+	</main>
+	<footer>© Sulivan Le Maitre - 2020 | Made with Symfony ♥</footer>
+
+
+{% endblock %}

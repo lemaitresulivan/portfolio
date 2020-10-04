@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
-</html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Bienvenue - PORTFOLIO
+			{% endblock %}
+		</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="{{asset('assets/css/style.css')}}"> {% block stylesheets %}{% endblock %}
+		<link rel="icon" type="image/png" href="{{asset('assets/img/logo.png')}}" />
+		</head>
+		<body>
+			{% block body %}{% endblock %}
+			{% block javascripts %}
+			<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+			<script src="{{asset('assets/js/jquery.easypiechart.js')}}"></script>
+			<script>
+			$(window).scroll(function() {
+				$('.chart').easyPieChart({
+					size:150,
+					barColor: 'crimson',
+					scaleColor: false,
+					lineWidth: 10,
+					trackColor: 'lightgrey',
+					lineCap: 'circle',
+					animate: 2000,
+				});
+			});
+			</script>
+			{% endblock %}
+		</body>
+	</html>
